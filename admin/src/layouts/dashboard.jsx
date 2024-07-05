@@ -46,7 +46,7 @@ export function Dashboard() {
           <Route path="profile" element={<Profile />} /> {/* Profile page route */}
         </Routes>
         <div className="text-blue-gray-600">
-          <Footer />
+          {/* <Footer /> */}
         </div>
       </div>
     </div>

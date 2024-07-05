@@ -13,7 +13,7 @@ export const projectsTableData = [
     document: "Document 1",
     timestamp: "22",
     query: "This is a longer query that needs to be truncated for display purposes.",
-    access_level : 'High',
+    access_level : 'A',
     email : 'sruthi@gmail.com',
     role : 'Admin'
   },
@@ -31,7 +31,7 @@ export const projectsTableData = [
     document: "Document 1",
     timestamp: "22",
     query: "This is a longer query that needs to be truncated for display purposes.",
-    access_level : 'High',
+    access_level : 'B',
     email : 'sruthi@gmail.com',
     role : 'Admin',
   },
@@ -49,7 +49,7 @@ export const projectsTableData = [
     document: "Document 1",
     timestamp: "22",
     query: "This is a longer query that needs to be truncated for display purposes.",
-    access_level : 'High',
+    access_level : 'C',
     email : 'sruthi@gmail.com',
     role : 'Admin'
   },
@@ -67,7 +67,7 @@ export const projectsTableData = [
     document: "Document 1",
     timestamp: "22",
     query: "This is a longer query that needs to be truncated for display purposes.",
-    access_level : 'High',
+    access_level : 'A',
     email : 'sruthi@gmail.com',
     role : 'Admin'
   },
@@ -85,7 +85,7 @@ export const projectsTableData = [
     document: "Document 1",
     timestamp: "22",
     query: "This is a longer query that needs to be truncated for display purposes.",
-    access_level : 'High',
+    access_level : 'C',
     email : 'sruthi@gmail.com',
     role : 'Admin'
   },
@@ -103,7 +103,7 @@ export const projectsTableData = [
     document: "Document 1",
     timestamp: "22",
     query: "This is a longer query that needs to be truncated for display purposes.",
-    access_level : 'High',
+    access_level : 'c',
     email : 'sruthi@gmail.com',
     role : 'Admin'
   },

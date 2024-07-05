@@ -1,7 +1,7 @@
 export const projectsTableData = [
   {
-    img: "/img/logo-xd.svg",
-    name: "Material XD Version",
+    img: "/img/team-4.jpeg",
+    name: "Govind",
     members: [
       { img: "/img/team-1.jpeg", name: "Romina Hadid" },
       { img: "/img/team-2.jpeg", name: "Ryan Tompson" },
@@ -13,13 +13,13 @@ export const projectsTableData = [
     document: "Document 1",
     timestamp: "22",
     query: "This is a longer query that needs to be truncated for display purposes.",
-    access_level : 'High',
+    access_level : 'A',
     email : 'sruthi@gmail.com',
     role : 'Admin'
   },
   {
-    img: "/img/logo-xd.svg",
-    name: "Material XD Version",
+    img: "/img/team-1.jpeg",
+    name: "Vijay",
     members: [
       { img: "/img/team-1.jpeg", name: "Romina Hadid" },
       { img: "/img/team-2.jpeg", name: "Ryan Tompson" },
@@ -28,16 +28,16 @@ export const projectsTableData = [
     ],
     budget: "$14,000",
     completion: 60,
-    document: "Document 1",
+    document: "Document 2",
     timestamp: "22",
     query: "This is a longer query that needs to be truncated for display purposes.",
-    access_level : 'High',
+    access_level : 'C',
     email : 'sruthi@gmail.com',
     role : 'Admin',
   },
   {
-    img: "/img/logo-xd.svg",
-    name: "Material XD Version",
+    img: "/img/team-2.jpeg",
+    name: "Sai Kumar",
     members: [
       { img: "/img/team-1.jpeg", name: "Romina Hadid" },
       { img: "/img/team-2.jpeg", name: "Ryan Tompson" },
@@ -46,16 +46,16 @@ export const projectsTableData = [
     ],
     budget: "$14,000",
     completion: 60,
-    document: "Document 1",
+    document: "Document 4",
     timestamp: "22",
     query: "This is a longer query that needs to be truncated for display purposes.",
-    access_level : 'High',
+    access_level : 'B',
     email : 'sruthi@gmail.com',
     role : 'Admin'
   },
   {
-    img: "/img/logo-xd.svg",
-    name: "Material XD Version",
+    img: "/img/team-4.jpeg",
+    name: "Yaswanth",
     members: [
       { img: "/img/team-1.jpeg", name: "Romina Hadid" },
       { img: "/img/team-2.jpeg", name: "Ryan Tompson" },
@@ -64,16 +64,16 @@ export const projectsTableData = [
     ],
     budget: "$14,000",
     completion: 60,
-    document: "Document 1",
+    document: "Document 7",
     timestamp: "22",
     query: "This is a longer query that needs to be truncated for display purposes.",
-    access_level : 'High',
+    access_level : 'B',
     email : 'sruthi@gmail.com',
     role : 'Admin'
   },
   {
-    img: "/img/logo-xd.svg",
-    name: "Material XD Version",
+    img: "/img/team-3.jpeg",
+    name: "Anjan",
     members: [
       { img: "/img/team-1.jpeg", name: "Romina Hadid" },
       { img: "/img/team-2.jpeg", name: "Ryan Tompson" },
@@ -85,13 +85,13 @@ export const projectsTableData = [
     document: "Document 1",
     timestamp: "22",
     query: "This is a longer query that needs to be truncated for display purposes.",
-    access_level : 'High',
+    access_level : 'A',
     email : 'sruthi@gmail.com',
     role : 'Admin'
   },
   {
-    img: "/img/logo-xd.svg",
-    name: "Material XD Version",
+    img: "/img/team-1.jpeg",
+    name: "Sruthi",
     members: [
       { img: "/img/team-1.jpeg", name: "Romina Hadid" },
       { img: "/img/team-2.jpeg", name: "Ryan Tompson" },
@@ -100,10 +100,10 @@ export const projectsTableData = [
     ],
     budget: "$14,000",
     completion: 60,
-    document: "Document 1",
+    document: "Document 3",
     timestamp: "22",
     query: "This is a longer query that needs to be truncated for display purposes.",
-    access_level : 'High',
+    access_level : 'B',
     email : 'sruthi@gmail.com',
     role : 'Admin'
   },
