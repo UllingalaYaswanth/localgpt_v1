@@ -9,7 +9,7 @@ import {
 } from "@/widgets/layout";
 import routes from "@/routes";
 import { useMaterialTailwindController, setOpenConfigurator } from "@/context";
-import { Profile } from "@/pages/dashboard";  // Make sure this import is correct based on your folder structure
+import { Groups, Profile } from "@/pages/dashboard";  // Make sure this import is correct based on your folder structure
 
 export function Dashboard() {
   const [controller, dispatch] = useMaterialTailwindController();
@@ -43,7 +43,8 @@ export function Dashboard() {
                 <Route exact path={path} element={element} />
               ))
           )}
-          <Route path="profile" element={<Profile />} /> {/* Profile page route */}
+          <Route path="profile" element={<Profile />} /> 
+          {/* <Route path="profile" element={<GroupsPage />} /> Profile page route */}
         </Routes>
         <div className="text-blue-gray-600">
           {/* <Footer /> */}
