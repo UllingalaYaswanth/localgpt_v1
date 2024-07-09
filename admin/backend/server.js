@@ -534,7 +534,7 @@ app.post('/api/files', async (req, res) => {
 
 // Route to fetch documents from Dropbox
 app.get('/api/files', async (req, res) => {
-  const accessToken = 'sl.B4sN4dzXhVb6hN_SdCaV7x0wmhuw-0aDRilCfoaGOze8GKKEOvRqNWTkrhYP6DkUcStdgqvmLULxkIgU6Ixi8_nlRZXxQZNL3_rQrYTveqGNoeBRfz0PlBkmZPaYBRaXxY8Uv8dgu35hbeBEKG50qq0'; // Replace with your Dropbox access token
+  const accessToken = 'enter access token'; // Replace with your Dropbox access token
 
   const dbx = axios.create({
     baseURL: 'https://api.dropboxapi.com/2',
