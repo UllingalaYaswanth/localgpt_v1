@@ -1,0 +1,161 @@
+{selectedGroup && (
+    <div>
+      <div className="mb-4 grid grid-cols-1 gap-5 xl:grid-cols-1">
+        <Card>
+          <CardHeader
+            floated={false}
+            shadow={false}
+            color="transparent"
+            className="m-0 flex items-center justify-between p-6"
+          >
+            <div>
+              <Typography variant="h6" color="blue-gray" className="mb-1">
+                Accounts
+              </Typography>
+            </div>
+          </CardHeader>
+          <CardBody className="overflow-x-scroll px-0 pt-0 pb-2">
+            <table className="w-full min-w-[640px] table-auto">
+              <thead>
+                <tr>
+                  {["author", "function", "status", "employed", ""].map((el) => (
+                    <th
+                      key={el}
+                      className="border-b border-blue-gray-50 py-3 px-5 text-left"
+                    >
+                      <Typography
+                        variant="small"
+                        className="text-[11px] font-bold uppercase text-blue-gray-400"
+                      >
+                        {el}
+                      </Typography>
+                    </th>
+                  ))}
+                </tr>
+              </thead>
+              <tbody>
+                {/* Example data, replace with your own */}
+                <tr>
+                  <td className="py-3 px-5">
+                    <div className="flex items-center gap-4">
+                      <Avatar src="https://via.placeholder.com/150" alt="User" size="sm" variant="rounded" />
+                      <div>
+                        <Typography variant="small" color="blue-gray" className="font-semibold">
+                          John Doe
+                        </Typography>
+                        <Typography className="text-xs font-normal text-blue-gray-500">
+                          john.doe@example.com
+                        </Typography>
+                      </div>
+                    </div>
+                  </td>
+                  <td className="py-3 px-5">
+                    <Typography className="text-xs font-semibold text-blue-gray-600">
+                      Developer
+                    </Typography>
+                    <Typography className="text-xs font-normal text-blue-gray-500">
+                      Full-time
+                    </Typography>
+                  </td>
+                  <td className="py-3 px-5">
+                    <div>Online</div>
+                  </td>
+                  <td className="py-3 px-5">
+                    <Typography className="text-xs font-semibold text-blue-gray-600">
+                      {formatDate(Date.now())}
+                    </Typography>
+                  </td>
+                  <td className="py-3 px-5"></td>
+                </tr>
+              </tbody>
+            </table>
+          </CardBody>
+        </Card>
+      </div>
+
+      <div className="mb-4 grid grid-cols-1 gap-5 xl:grid-cols-1">
+        <Card className="overflow-hidden xl:col-span-2 border border-blue-gray-100 shadow-sm">
+          <CardHeader
+            floated={false}
+            shadow={false}
+            color="transparent"
+            className="m-0 flex items-center justify-between p-6"
+          >
+            <div>
+              <Typography variant="h6" color="blue-gray" className="mb-1">
+                Documents
+              </Typography>
+            </div>
+          </CardHeader>
+          <CardBody className="overflow-x-scroll px-0 pt-0 pb-2">
+            <table className="w-full min-w-[640px] table-auto">
+              <thead>
+                <tr className="items-center">
+                  {["name", "uploaded On", "access level", "keyword"].map((el) => (
+                    <th
+                      key={el}
+                      className="border-b border-blue-gray-50 py-3 px-6 text-left"
+                    >
+                      <Typography
+                        variant="small"
+                        className="text-[11px] font-medium uppercase text-blue-gray-400"
+                      >
+                        {el}
+                      </Typography>
+                    </th>
+                  ))}
+                </tr>
+              </thead>
+              <tbody>
+                {manuallyWrittenData.map(
+                  ({ name, timestamp, document, access_level }, key) => {
+                    const className = `py-3 px-5 ${
+                      key === manuallyWrittenData.length - 1
+                        ? ""
+                        : "border-b border-blue-gray-50"
+                    }`;
+                    return (
+                      <tr key={name}>
+                        <td className={className}>
+                          <Typography
+                            variant="small"
+                            className="text-xs font-medium text-blue-gray-600"
+                          >
+                            {document}
+                          </Typography>
+                        </td>
+                        <td className={className}>
+                          <Typography
+                            variant="small"
+                            className="text-xs font-medium text-blue-gray-600"
+                          >
+                            {formatDate(timestamp)}
+                          </Typography>
+                        </td>
+                        <td className={className}>
+                          <Typography
+                            variant="small"
+                            className="text-xs font-medium text-blue-gray-600"
+                          >
+                            {access_level}
+                          </Typography>
+                        </td>
+                        <td className={className}>
+                          <Typography
+                            variant="small"
+                            className="text-xs font-medium text-blue-gray-600"
+                          >
+                            {access_level}
+                          </Typography>
+                        </td>
+                      </tr>
+                    );
+                  }
+                )}
+              </tbody>
+            </table>
+          </CardBody>
+        </Card>
+      </div>
+    </div>
+  )}

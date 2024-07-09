@@ -631,9 +631,9 @@ export function Acc() {
     setIsAddUserOpen(!isAddUserOpen);
   };
 
-  const navigateToProfile = (userId) => {
-    navigate(`/dashboard/profile/${userId}`);
-  };
+  const navigateToProfile = () => {
+        navigate(`/dashboard/profile`);
+      };
 
   const handleUserAdded = (newUser) => {
     setUsers((prevUsers) => [...prevUsers, newUser]);
@@ -669,7 +669,7 @@ export function Acc() {
             <button onClick={toggleAddUserPopup} className="px-4 py-2 bg-blue-600 text-white rounded-md hover:bg-blue-700 focus:outline-none focus:bg-blue-700">Create</button>
           </div>
         </CardHeader>
-        <CardBody className="overflow-x-scroll px-0 pt-0 pb-2">
+        <CardBody className="max-h-[735px] overflow-y-scroll px-0 pt-0 pb-2">
           <table className="w-full min-w-[640px] table-auto">
             <thead>
               <tr>
@@ -707,7 +707,7 @@ export function Acc() {
                               variant="small"
                               color="blue-gray"
                               className="font-semibold cursor-pointer"
-                              onClick={() => navigateToProfile(_id)}
+                              onClick={() => navigateToProfile()}
                             >
                               {firstName} {lastName}
                             </Typography>
